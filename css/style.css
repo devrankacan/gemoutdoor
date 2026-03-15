@@ -573,8 +573,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .bed-length i { color: var(--blue); }
 
+/* Product main content area */
+.product-main { min-width: 0; }
+.product-section-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--text); margin-bottom: 14px;
+}
+.product-feature-title {
+  font-family: var(--font-heading);
+  font-size: 0.9rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--text); margin-bottom: 12px;
+}
+
 /* Specs sidebar */
-.product-sidebar {}
 .specs-card {
   background: var(--dark);
   border-radius: var(--radius);
@@ -617,7 +631,35 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 1px;
 }
 .price-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 6px; }
+.price-value--sm { font-size: 1.4rem !important; }
 .sidebar-cta { width: 100%; text-align: center; padding: 14px; }
+
+/* Product description paragraph spacing */
+.product-description p + p { margin-top: 14px; }
+
+/* Find My Camper card variant */
+.product-card--cta {
+  background: var(--dark);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 40px 24px; text-align: center;
+  min-height: 260px;
+}
+.product-card-cta-icon {
+  font-size: 2.5rem; color: var(--blue); margin-bottom: 16px;
+}
+.product-card-cta-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem; font-weight: 700;
+  color: var(--white); margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.product-card-cta-text {
+  color: #888; font-size: 0.82rem; margin-bottom: 20px;
+}
+
+/* Stacked button (contact page sidebar) */
+.btn-stack { margin-top: 10px; }
 
 /* ============================================================
    COMPATIBLE TRUCKS PAGE
@@ -715,7 +757,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============================================================
    CONTACT PAGE
    ============================================================ */
-.contact-section { padding: 70px 0; background: var(--white); }
+.contact-section { padding: 70px 0; background: var(--dark); }
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 380px;
@@ -795,7 +837,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--blue); font-size: 0.9rem;
   margin-top: 3px; flex-shrink: 0;
 }
-.contact-info-item div {}
+.contact-info-item div { min-width: 0; }
 .contact-info-item .ci-label {
   font-family: var(--font-heading); font-size: 0.68rem;
   letter-spacing: 2px; text-transform: uppercase;
@@ -855,7 +897,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============================================================
    ABOUT PAGE
    ============================================================ */
-.about-intro { padding: 80px 0; }
+.about-intro { padding: 80px 0; background: var(--white); }
 .about-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -919,7 +961,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--white);
   margin-bottom: 10px;
 }
-.pillar-card p { font-size: 0.83rem; color: #999; line-height: 1.75; }
+.pillar-card p { font-size: 0.83rem; color: #bbb; line-height: 1.75; }
 
 .about-construction { padding: 80px 0; }
 .about-construction-grid {
@@ -979,7 +1021,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============================================================
    CONTACT PAGE
    ============================================================ */
-.contact-page { padding: 80px 0; }
+.contact-page { padding: 80px 0; background: #080808; }
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 340px;
