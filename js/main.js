@@ -98,9 +98,21 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   var slider = document.getElementById('baSlider');
   if (!slider) return;
 
-  var before = document.getElementById('baBefore');
-  var handle = document.getElementById('baHandle');
+  var before    = document.getElementById('baBefore');
+  var handle    = document.getElementById('baHandle');
+  var beforeImg = slider.querySelector('.ba-img-before');
   var isDragging = false;
+
+  // Keep the before-image the same pixel width as the slider
+  // so overflow:hidden clips correctly at any handle position
+  function syncImgWidth() {
+    if (beforeImg) beforeImg.style.width = slider.offsetWidth + 'px';
+  }
+  syncImgWidth();
+  window.addEventListener('resize', syncImgWidth);
+  // Also sync after the after-image loads (it sets the slider height)
+  var afterImg = slider.querySelector('.ba-img-after');
+  if (afterImg) afterImg.addEventListener('load', syncImgWidth);
 
   function setPosition(clientX) {
     var rect = slider.getBoundingClientRect();
