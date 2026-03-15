@@ -6,12 +6,10 @@
   <title>GEM OUTDOOR – Caravans & Adventure</title>
   <meta name="description" content="GEM Outdoor – Premium caravans and outdoor living solutions. Explore our Cyberglad series." />
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,37 +17,66 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <span class="logo-gem">GEM</span><span class="logo-outdoor">OUTDOOR</span>
+        <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/logo-beyaz.png" alt="GEM Outdoor" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
+
+        <!-- CARAVANS -->
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">CARAVANS <i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown">
-            <li><a href="#">Cyberglad</a></li>
-            <li><a href="#">Smart Shine</a></li>
-            <li><a href="#">All Models</a></li>
+            <li class="has-subdropdown">
+              <a href="#">Motorhome <i class="fa-solid fa-chevron-right"></i></a>
+              <ul class="subdropdown">
+                <li><a href="#">Ronin XL Motorhome</a></li>
+                <li><a href="#">Freedom Motorhome</a></li>
+                <li><a href="#">Reviva Camper Van</a></li>
+              </ul>
+            </li>
+            <li class="has-subdropdown">
+              <a href="#">Pick-up Caravans <i class="fa-solid fa-chevron-right"></i></a>
+              <ul class="subdropdown">
+                <li><a href="#">All Pick-Up Caravans</a></li>
+                <li><a href="#">Atlas Cabin Box</a></li>
+                <li><a href="#">Gladiator Pick-up Caravans</a></li>
+                <li><a href="#">Cabin Fitcheck Service</a></li>
+              </ul>
+            </li>
+            <li class="has-subdropdown">
+              <a href="#">Pop-up Camper <i class="fa-solid fa-chevron-right"></i></a>
+              <ul class="subdropdown">
+                <li><a href="#">Loft Pop-up Camper</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Vehicle Solutions</a></li>
           </ul>
         </li>
+
+        <!-- CYBERGLAD -->
         <li class="nav-item">
-          <a href="#cyberglad" class="nav-link">CYBERGLAD</a>
+          <a href="https://cyberglad.hotomobil.com" class="nav-link" target="_blank">CYBERGLAD</a>
         </li>
+
+        <!-- PRICES -->
         <li class="nav-item has-dropdown">
           <a href="#" class="nav-link">PRICES <i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="#">Price List</a></li>
-            <li><a href="#">Get a Quote</a></li>
           </ul>
         </li>
+
+        <!-- CONTACT -->
         <li class="nav-item has-dropdown">
           <a href="#contact" class="nav-link">CONTACT <i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown">
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#dealership">Dealership</a></li>
+            <li><a href="#contact">General Contact</a></li>
+            <li><a href="#dealership">Dealer Contact</a></li>
           </ul>
         </li>
+
       </ul>
     </div>
   </nav>
@@ -57,10 +84,9 @@
   <!-- ===================== HERO (YouTube Video BG) ===================== -->
   <section class="hero" id="home">
     <div class="hero-video-wrapper">
-      <!-- YouTube iframe embed as background -->
       <iframe
         id="heroVideo"
-        src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_VIDEO_ID&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
+        src="https://www.youtube.com/embed/_C7p3nY3hiw?autoplay=1&mute=1&loop=1&playlist=_C7p3nY3hiw&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&start=2&end=32"
         frameborder="0"
         allow="autoplay; encrypted-media"
         allowfullscreen
@@ -71,12 +97,12 @@
     <div class="hero-content">
       <p class="hero-eyebrow">
         <span class="line"></span>
-        WELCOME TO BUILDLUX
+        Welcome to Buildlux
         <span class="line"></span>
       </p>
-      <h1 class="hero-title">CYBER HAS <span>LANDED</span></h1>
-      <p class="hero-subtitle">Designed For Cybertruck. Ready For The World.</p>
-      <a href="#cyberglad" class="btn btn-outline">EXPLORE CYBERGLAD</a>
+      <h1 class="hero-title">Cyber Has <span>Landed</span></h1>
+      <p class="hero-subtitle">Designed For Cybertruck. Ready For The World</p>
+      <a href="https://cyberglad.hotomobil.com" class="btn btn-outline" target="_blank">Explore Cyberglad</a>
     </div>
   </section>
 
@@ -85,64 +111,78 @@
     <div class="container">
       <h2 class="section-title">CERTIFICATES</h2>
       <div class="cert-grid">
-        <!-- Certificate 1 -->
+
         <div class="cert-card">
           <div class="cert-brand">
-            <img src="images/cert-logo-1.png" alt="TÜV" onerror="this.style.display='none'" />
-            <span class="cert-brand-placeholder">TÜV</span>
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_143934641.png" alt="Certificate Brand" />
           </div>
           <p class="cert-name">Production Conformity Certificate</p>
           <div class="cert-img-wrap">
-            <img src="images/cert-1.jpg" alt="TÜV Certificate" onerror="this.src='https://via.placeholder.com/220x280/f0f0f0/999?text=Certificate'" />
+            <a href="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_143843300.png" class="lightbox-trigger" data-img="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_143843300.png">
+              <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_143843300-801x1024.png" alt="Certificate 1" />
+              <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
           </div>
         </div>
-        <!-- Certificate 2 -->
+
         <div class="cert-card">
           <div class="cert-brand">
-            <img src="images/cert-logo-2.png" alt="Volkswagen" onerror="this.style.display='none'" />
-            <span class="cert-brand-placeholder">VW</span>
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144142274.png" alt="Certificate Brand" />
           </div>
           <p class="cert-name">Production Conformity Certificate</p>
           <div class="cert-img-wrap">
-            <img src="images/cert-2.jpg" alt="VW Certificate" onerror="this.src='https://via.placeholder.com/220x280/f0f0f0/999?text=Certificate'" />
+            <a href="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144225161.png" class="lightbox-trigger" data-img="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144225161.png">
+              <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144225161-801x1024.png" alt="Certificate 2" />
+              <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
           </div>
         </div>
-        <!-- Certificate 3 -->
+
         <div class="cert-card">
           <div class="cert-brand">
-            <img src="images/cert-logo-3.png" alt="NSAI" onerror="this.style.display='none'" />
-            <span class="cert-brand-placeholder">NSAI</span>
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144157222.png" alt="Certificate Brand" />
           </div>
           <p class="cert-name">Production Conformity Certificate</p>
           <div class="cert-img-wrap">
-            <img src="images/cert-3.jpg" alt="NSAI Certificate" onerror="this.src='https://via.placeholder.com/220x280/f0f0f0/999?text=Certificate'" />
+            <a href="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144245689.png" class="lightbox-trigger" data-img="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144245689.png">
+              <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144245689-801x1024.png" alt="Certificate 3" />
+              <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
           </div>
         </div>
-        <!-- Certificate 4 -->
+
         <div class="cert-card">
           <div class="cert-brand">
-            <div class="stellantis-badge">Stellantis</div>
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144210581.png" alt="Certificate Brand" />
           </div>
           <p class="cert-name">Production Conformity Certificate</p>
-          <div class="cert-img-wrap stellantis">
-            <img src="images/cert-4.jpg" alt="Stellantis Certificate" onerror="this.src='https://via.placeholder.com/220x280/1a3a6e/fff?text=Stellantis'" />
+          <div class="cert-img-wrap">
+            <a href="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144306504.png" class="lightbox-trigger" data-img="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144306504.png">
+              <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-07_144306504-801x1024.png" alt="Certificate 4" />
+              <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" id="lightboxImg" alt="Certificate" />
+    </div>
+  </div>
+
   <!-- ===================== SMART SHINE ===================== -->
   <section class="section smart-shine" id="smart-shine">
-    <div class="container">
+    <div class="container text-center">
       <h2 class="section-title">SMART SHINE</h2>
-      <div class="shine-icons">
-        <span class="shine-icon"><i class="fa-solid fa-wifi"></i></span>
-        <span class="shine-icon"><i class="fa-solid fa-solar-panel"></i></span>
-        <span class="shine-icon"><i class="fa-solid fa-temperature-low"></i></span>
-        <span class="shine-icon"><i class="fa-solid fa-bolt"></i></span>
-        <span class="shine-icon"><i class="fa-solid fa-mobile-screen"></i></span>
-        <span class="shine-icon"><i class="fa-solid fa-droplet"></i></span>
+      <div class="shine-icons-img">
+        <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/ikonlar-1024x225.png" alt="Smart Shine Features" />
       </div>
     </div>
     <div class="shine-split">
@@ -151,10 +191,25 @@
         <h3 class="shine-heading">Innovation meets<br /><strong>Mobile Living in Style</strong></h3>
         <p class="shine-sub">Let your voice lighten your journey!</p>
       </div>
-      <div class="shine-images-col">
-        <div class="shine-img-grid">
-          <img src="images/shine-1.jpg" alt="Caravan in nature" onerror="this.src='https://via.placeholder.com/380x260/3a3a3a/fff?text=Smart+Shine'" />
-          <img src="images/shine-2.jpg" alt="Caravan side view" onerror="this.src='https://via.placeholder.com/380x260/2a2a2a/fff?text=Smart+Shine'" />
+      <div class="shine-slider-col">
+        <!-- Before/After Slider -->
+        <div class="before-after-slider" id="baSlider">
+          <div class="ba-after">
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/after.png" alt="After" />
+          </div>
+          <div class="ba-before" id="baBefore">
+            <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-09_164137048.png" alt="Before" />
+          </div>
+          <div class="ba-handle" id="baHandle">
+            <div class="ba-handle-line"></div>
+            <div class="ba-handle-circle">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="ba-handle-line"></div>
+          </div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
         </div>
       </div>
     </div>
@@ -163,12 +218,12 @@
   <!-- ===================== VIDEO SECTION ===================== -->
   <section class="section video-section" id="cyberglad">
     <div class="video-bg">
-      <img src="images/video-bg.jpg" alt="Caravan background" onerror="this.src='https://via.placeholder.com/1920x700/111/333?text='" />
+      <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-09_162807841.png" alt="Caravan" />
     </div>
     <div class="video-overlay"></div>
     <div class="video-content">
       <div class="video-text">
-        <p>Managing the <strong>caravan</strong>, from<br />setup to takedown, is<br />remarkably <strong>hassle-free</strong>.</p>
+        <p>Managing the <strong>caravan</strong>, from setup to takedown, is remarkably <strong>hassle-free</strong>.</p>
       </div>
       <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
         <i class="fa-solid fa-play"></i>
@@ -179,31 +234,15 @@
       <div class="modal-backdrop" id="modalBackdrop"></div>
       <div class="modal-content">
         <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
-        <iframe
-          id="modalIframe"
-          src=""
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-          title="Product Video"
-        ></iframe>
+        <iframe id="modalIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Product Video"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- ===================== APP SECTION ===================== -->
-  <section class="section app-section" id="app">
-    <div class="app-inner">
-      <div class="app-img-col">
-        <img src="images/app-mockup.png" alt="Smart App Mockup" onerror="this.src='https://via.placeholder.com/340x420/1a1a2e/4fc3f7?text=App+Mockup'" />
-      </div>
-      <div class="app-text-col">
-        <div class="app-logo-h">H</div>
-        <p class="app-eyebrow">WELCOME TO THE</p>
-        <h2 class="app-title">HOTOMOBIL<br />NEXT LEVEL</h2>
-        <p class="app-cursive">Smart App</p>
-        <a href="#" class="btn btn-primary">DOWNLOAD APP</a>
-      </div>
+  <!-- ===================== APP BANNER ===================== -->
+  <section class="section app-banner">
+    <div class="container">
+      <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-09_162807841-1024x480.png" alt="Hotomobil Smart App" style="width:100%;display:block;" />
     </div>
   </section>
 
@@ -212,28 +251,17 @@
     <div class="dealership-inner container">
       <div class="dealership-text-col">
         <h2 class="dealership-title">
-          EXPAND<br />YOUR VISION<br />WITH OUR<br /><span>DEALERSHIP<br />OPPORTUNITY.</span>
+          Expand your vision with our dealership <span>opportunity.</span>
         </h2>
-        <a href="#contact" class="btn btn-primary">CONTACT DEALERSHIP</a>
+        <a href="#contact" class="btn btn-primary">Contact Dealership</a>
       </div>
       <div class="dealership-info-col">
-        <p class="dealership-badge">28+ Country &amp; 6 Continent, Our Global Voyage</p>
-        <p class="dealership-desc">
-          Expand your horizons and accelerate your business potential by becoming part of our
-          dynamic dealership network. Our franchise partnership not only opens doors to exciting
-          new opportunities but also ensures continuous growth, innovation, and robust market
-          presence.
-        </p>
-        <p class="dealership-desc">
-          Collaborate with industry leaders, leverage established systems, and benefit from
-          comprehensive support designed to empower your entrepreneurial journey. Take the
-          next strategic step toward a prosperous and sustainable future, as together, we build a
-          powerful, forward-thinking vision that positions your business at the forefront of
-          success.
-        </p>
+        <p class="dealership-badge"><strong>28+</strong> Country &amp; 6 Continent, Our Global Voyage</p>
+        <p class="dealership-desc">Expand your horizons and accelerate your business potential by becoming part of our dynamic dealership network. Our franchise partnership not only opens doors to exciting new opportunities but also ensures continuous growth, innovation, and robust market presence.</p>
+        <p class="dealership-desc">Collaborate with industry leaders, leverage established systems, and benefit from comprehensive support designed to empower your entrepreneurial journey. Take the next strategic step toward a prosperous and sustainable future, as together, we build a powerful, forward-thinking vision that positions your business at the forefront of success.</p>
       </div>
       <div class="dealership-img-col">
-        <img src="images/dealership.jpg" alt="Dealership fleet" onerror="this.src='https://via.placeholder.com/460x380/1a3a1a/fff?text=Our+Fleet'" />
+        <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/gorsel_2025-11-09_163249534.png" alt="Dealership" />
       </div>
     </div>
   </section>
@@ -242,19 +270,24 @@
   <footer class="footer" id="contact">
     <div class="footer-instagram">
       <a href="https://instagram.com" target="_blank" rel="noopener">
-        <i class="fa-brands fa-instagram"></i> FOLLOW US ON INSTAGRAM
+        <i class="fa-brands fa-instagram"></i> Follow us on Instagram
       </a>
     </div>
     <div class="footer-main container">
+      <div class="footer-col footer-logo-col">
+        <a href="index.html">
+          <img src="https://peru-dragonfly-236453.hostingersite.com/wp-content/uploads/2025/11/logo-beyaz.png" alt="GEM Outdoor" class="footer-logo" />
+        </a>
+      </div>
       <div class="footer-col">
         <h4>Our Services</h4>
         <ul>
-          <li><a href="#">Caravans</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">After-Sales Service</a></li>
-          <li><a href="#">Customization</a></li>
-          <li><a href="#">Innovation &amp; Remodeling</a></li>
-          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Residential Construction</a></li>
+          <li><a href="#">Commercial Construction</a></li>
+          <li><a href="#">Structural Engineering</a></li>
+          <li><a href="#">Land Development</a></li>
+          <li><a href="#">Renovation and Remodeling</a></li>
+          <li><a href="#">Interior Design and Finishing</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -269,13 +302,13 @@
         </ul>
       </div>
       <div class="footer-col footer-contact">
-        <p><i class="fa-solid fa-envelope"></i> info@gemoutdoor.com</p>
+        <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
         <p><i class="fa-solid fa-location-dot"></i> 123, King Street, New York, USA</p>
         <div class="footer-socials">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </div>
