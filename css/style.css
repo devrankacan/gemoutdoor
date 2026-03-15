@@ -1021,7 +1021,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ============================================================
    CONTACT PAGE
    ============================================================ */
-.contact-page { padding: 80px 0; background: #080808; }
+.contact-page { padding: 80px 0; background: var(--gray-bg); }
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 340px;
@@ -1034,10 +1034,10 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--white);
+  color: var(--dark);
   margin-bottom: 8px;
 }
-.contact-form-subtitle { font-size: 0.86rem; color: #999; margin-bottom: 28px; }
+.contact-form-subtitle { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 28px; }
 
 .contact-form { display: flex; flex-direction: column; gap: 0; }
 .form-row {
@@ -1054,31 +1054,34 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #aaa;
+  color: #555;
 }
 .form-group label .required { color: var(--blue); }
 .form-group input,
 .form-group select,
 .form-group textarea {
-  background: #111;
-  border: 1px solid #222;
+  background: var(--white);
+  border: 1px solid #d0d0d0;
   border-radius: 2px;
-  color: var(--white);
+  color: var(--text);
   font-family: var(--font-body);
   font-size: 0.86rem;
   padding: 10px 14px;
-  transition: border-color .2s;
+  transition: border-color .2s, box-shadow .2s;
   outline: none;
   width: 100%;
   box-sizing: border-box;
 }
 .form-group input::placeholder,
-.form-group textarea::placeholder { color: #555; }
+.form-group textarea::placeholder { color: #bbb; }
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus { border-color: var(--blue); }
+.form-group textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(41,168,224,0.1);
+}
 .form-group select { appearance: none; cursor: pointer; }
-.form-group select option { background: #111; }
+.form-group select option { background: var(--white); color: var(--text); }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-submit { margin-top: 8px; }
 
