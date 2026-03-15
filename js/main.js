@@ -102,23 +102,32 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   var handle = document.getElementById('baHandle');
   var isDragging = false;
 
-  function setPosition(x) {
-    var rect    = slider.getBoundingClientRect();
-    var pct     = Math.min(Math.max((x - rect.left) / rect.width, 0.02), 0.98);
-    var pctPx   = (pct * 100).toFixed(2) + '%';
-    before.style.width  = pctPx;
-    handle.style.left   = pctPx;
+  function setPosition(clientX) {
+    var rect = slider.getBoundingClientRect();
+    var pct  = Math.min(Math.max((clientX - rect.left) / rect.width, 0.02), 0.98);
+    var val  = (pct * 100).toFixed(2) + '%';
+    before.style.width = val;
+    handle.style.left  = val;
   }
 
+  // Mouse
   handle.addEventListener('mousedown', function (e) { isDragging = true; e.preventDefault(); });
-  slider.addEventListener('mousedown', function (e) { isDragging = true; setPosition(e.clientX); });
-  window.addEventListener('mousemove', function (e) { if (isDragging) setPosition(e.clientX); });
-  window.addEventListener('mouseup',   function ()  { isDragging = false; });
+  slider.addEventListener('mousedown', function (e) { isDragging = true; e.preventDefault(); setPosition(e.clientX); });
+  document.addEventListener('mousemove', function (e) { if (isDragging) setPosition(e.clientX); });
+  document.addEventListener('mouseup',   function ()  { isDragging = false; });
 
-  handle.addEventListener('touchstart', function (e) { isDragging = true; }, { passive: true });
-  slider.addEventListener('touchstart', function (e) { isDragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
-  window.addEventListener('touchmove',  function (e) { if (isDragging) setPosition(e.touches[0].clientX); }, { passive: true });
-  window.addEventListener('touchend',   function ()  { isDragging = false; });
+  // Touch
+  handle.addEventListener('touchstart', function (e) { isDragging = true; e.stopPropagation(); }, { passive: true });
+  slider.addEventListener('touchstart', function (e) {
+    isDragging = true;
+    setPosition(e.touches[0].clientX);
+  }, { passive: true });
+  document.addEventListener('touchmove', function (e) {
+    if (isDragging) {
+      setPosition(e.touches[0].clientX);
+    }
+  }, { passive: true });
+  document.addEventListener('touchend', function () { isDragging = false; });
 })();
 
 // ---- Video modal ----
