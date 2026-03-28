@@ -1,0 +1,112 @@
+{
+  "units": [
+    {
+      "id": "u1",
+      "model": "Gladiator XL",
+      "year": "2024",
+      "color": "White Fiber",
+      "location": "Orange County, CA",
+      "vin": "GLXS035",
+      "status": "sold",
+      "price": "",
+      "image": "",
+      "upgrades": []
+    },
+    {
+      "id": "u2",
+      "model": "Gladiator XL",
+      "year": "2025",
+      "color": "Black Polyurea",
+      "location": "Houston, TX",
+      "vin": "GLX098",
+      "status": "available",
+      "price": "$52,000",
+      "image": "",
+      "upgrades": ["12V Suga AC", "200Ah Lithium Battery Upgrade", "200Ah Extra Lithium Battery", "205W Extra Solar Panel"]
+    },
+    {
+      "id": "u3",
+      "model": "Gladiator XL",
+      "year": "2025",
+      "color": "Grey Polyurea",
+      "location": "Houston, TX",
+      "vin": "GLX0106",
+      "status": "available",
+      "price": "$52,000",
+      "image": "",
+      "upgrades": ["12V Suga AC", "200Ah Lithium Battery Upgrade"]
+    },
+    {
+      "id": "u4",
+      "model": "Cyberglad Premium",
+      "year": "2025",
+      "color": "Black Raptor",
+      "location": "Orange County, CA",
+      "vin": "CYBERG01",
+      "status": "available",
+      "price": "",
+      "image": "",
+      "upgrades": []
+    },
+    {
+      "id": "u5",
+      "model": "Gladiator L",
+      "year": "2024",
+      "color": "Dark Blue Fiber",
+      "location": "Orange County, CA",
+      "vin": "GLXLD039",
+      "status": "demo",
+      "price": "",
+      "image": "",
+      "upgrades": []
+    },
+    {
+      "id": "u6",
+      "model": "Gladiator S Premium",
+      "year": "2025",
+      "color": "Grey Polyurea",
+      "location": "Houston, TX",
+      "vin": "G0418",
+      "status": "available",
+      "price": "$43,000",
+      "image": "",
+      "upgrades": ["100Ah Lithium Battery Upgrade", "Urban Badger Roof Tent with 110W Solar Panel"]
+    },
+    {
+      "id": "u7",
+      "model": "Gladiator XL",
+      "year": "2025",
+      "color": "Grey Polyurea",
+      "location": "Houston, TX",
+      "vin": "GLX0105",
+      "status": "available",
+      "price": "$52,000",
+      "image": "",
+      "upgrades": ["12V Suga AC", "200Ah Lithium Battery Upgrade"]
+    },
+    {
+      "id": "u8",
+      "model": "Gladiator XLE",
+      "year": "2025",
+      "color": "Black Polyurea",
+      "location": "Houston, TX",
+      "vin": "P3336",
+      "status": "sold",
+      "price": "$56,000",
+      "image": "",
+      "upgrades": ["12V Suga AC", "200Ah Lithium Battery Upgrade"]
+    },
+    {
+      "id": "u9",
+      "model": "Gladiator XLE",
+      "year": "2025",
+      "color": "Khaki Polyurea",
+      "location": "Houston, TX",
+      "vin": "GLXLE097",
+      "status": "available",
+      "price": "$56,000",
+      "image": "",
+      "upgrades": ["12V Suga AC", "200Ah Lithium Battery Upgrade", "200Ah Extra Lithium Battery", "205W Extra Solar Panel"]
+    }
+  ]
+}

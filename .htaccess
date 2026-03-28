@@ -1,6 +1,9 @@
 Options -MultiViews
 RewriteEngine On
 
+# Protect data directory from direct access
+RewriteRule ^data(/.*)?$ - [F,L]
+
 # 1. index.html → kök dizine yönlendir
 RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
@@ -9,7 +12,13 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/([^/?]+)\.html[\s?] [NC]
 RewriteRule ^[^/?]+\.html$ /%1 [R=301,L]
 
-# 3. Temiz URL'leri dahili olarak .html dosyasına yönlendir
+# 3. Temiz URL'leri dahili olarak .php dosyasına yönlendir (öncelikli)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L,QSA]
+
+# 4. Temiz URL'leri dahili olarak .html dosyasına yönlendir
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
